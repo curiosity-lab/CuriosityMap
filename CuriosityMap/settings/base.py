@@ -2,7 +2,7 @@ from unipath import Path
 
 BASE_DIR = Path(__file__).ancestor(3)
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*', '3.23.61.199']
 
 """
 Django settings for CuriosityMap project.

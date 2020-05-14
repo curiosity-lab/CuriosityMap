@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Questionnaire</title>
+</head>
+<body>
+{% for q in questionnaire.questions %}
+    <a>{{q.question_number}}. {{q.name_text}}</a>
+{% endfor %}
+</body>
+</html>

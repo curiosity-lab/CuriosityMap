@@ -41,3 +41,8 @@ class TeacherData(models.Model):
 
     def __str__(self):
         return self.name_text
+
+
+class StatusData(models.Model):
+    status_text = models.CharField(max_length=200, default="")
+    status_number = models.PositiveSmallIntegerField(default=20)

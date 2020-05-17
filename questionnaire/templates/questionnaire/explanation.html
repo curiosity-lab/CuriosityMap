@@ -5,8 +5,10 @@
     <title>Quesionnaire Explanation</title>
 </head>
 <body>
+<a>{{explanations.explanation}}</a>
+
 <button type="submit" onclick="location.href='{% url 'questionnaire:questionnaire' explanations.source explanations.source_id explanations.target explanations.target_id%}'"
-        name='questionnaire'><a>{{explanations.explanation}}</a></button>
+        name='questionnaire'><a>Start</a></button>
 
 </body>
 </html>

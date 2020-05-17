@@ -48,10 +48,6 @@ class QuestionnaireView(generic.TemplateView):
     #     return context
     #
     # def get_queryset(self):
-        """
-        Return the last five published questions (not including those set to be
-        published in the future).
-        """
         source_in = self.request.resolver_match.kwargs['source']
         target_in = self.request.resolver_match.kwargs['target']
 

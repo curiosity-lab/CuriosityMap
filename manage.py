@@ -3,7 +3,7 @@ import os
 import sys
 
 # cmd = ['manage.py', 'shell']
-# cmd = ['manage.py', 'createsuperuser'] # goren22GG
+# cmd = ['manage.py', 'createsuperuser'] # admin/goren@gorengordon.com/goren22GG
 cmd = ['manage.py', 'runserver', '8080']
 
 # cmd = ['manage.py', 'startapp', 'child']
@@ -26,7 +26,7 @@ if len(sys.argv) > 1:
         except ImportError as exc:
             raise ImportError(
                 "Couldn't import Django. Are you sure it's installed available on your PYTHONPATH environment variable? Did you forget to activate a virtual environment?"
-            ) from exc
+            ) # from exc
         execute_from_command_line(sys.argv)
 else:
     if __name__ == "__main__":

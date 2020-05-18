@@ -37,7 +37,7 @@ class TeacherData(models.Model):
     teacher_type = models.CharField(max_length=5, choices=TEACHER_TYPES, default='G')
 
     grade = models.CharField(max_length=2, choices=GRADES_CHOICES, default='1st')
-    topic = models.CharField(max_length=200, default="")
+    topic = models.CharField(max_length=200, default="", blank=True)
 
     def __str__(self):
         return self.name_text

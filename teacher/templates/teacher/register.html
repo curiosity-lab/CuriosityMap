@@ -9,10 +9,13 @@
 
 {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
 <a>Teacher detail</a>
-<form action="{% url 'teacher:adddata' teacher_id%}" method="post">
+<form action="{% url 'teacher:update' %}" method="post">
 {% csrf_token %}
-    {{form.as_ul}}
-<input type="submit" value="Submit">
+<input type="text" name="username" id="username">
+<label> Username: </label><br>
+<input type="text" name="password" id="password">
+<label> Password: </label><br>
+<input type="submit" value="Register">
 </form>
     {% for status in details %}
         <label> {{status.status_text}}</label><br>

@@ -5,8 +5,23 @@
     <title>Questionnaire</title>
 </head>
 <body>
-{% for q in questionnaire.questions %}
-    <a>{{q.question_number}}. {{q.name_text}}</a>
-{% endfor %}
+{% load static %}
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+<form action="{% url 'questionnaire:submitted' questionnaire.source questionnaire.source_id questionnaire.target questionnaire.target_id%}" method="post">
+{% csrf_token %}
+    <a> {{questionnaire.source}} {{questionnaire.target}}</a>
+    <a>{{questionnaire.status}}</a>
+    {% for q in questionnaire.questions %}
+        <p>{{q.question_number}}. {{q.name_text}}:</p>
+        {% for a in questionnaire.answers %}
+            <input type="radio" id='{{q.question_number}}_{{a.answer_number}}'
+                   name='{{q.question_number}}_{{a.answer_number}}'
+                   value='checked' >
+            <label for="{{a.answer_number}}">{{a.name_text}}</label>
+        {% endfor %}
+        </br>
+    {% endfor %}
+<input type="submit" value="Submit">
+</form>
 </body>
 </html>

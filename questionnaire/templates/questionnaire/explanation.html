@@ -7,7 +7,7 @@
 <body>
 <a>{{explanations.explanation}}</a>
 
-<button type="submit" onclick="location.href='{% url 'questionnaire:questionnaire' explanations.source explanations.source_id explanations.target explanations.target_id%}'"
+<button type="submit" onclick="location.href='{% url 'questionnaire:questionnaire' explanations.source explanations.source_id explanations.target explanations.target_id 1%}'"
         name='questionnaire'><a>Start</a></button>
 
 </body>

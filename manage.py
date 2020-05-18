@@ -14,7 +14,7 @@ cmd = ['manage.py', 'runserver', '8080']
 # cmd = ['manage.py', 'sqlmigrate', 'child',  '0003']
 
 # cmd = ['manage.py', 'makemigrations', 'questionnaire']
-# cmd = ['manage.py', 'sqlmigrate', 'questionnaire',  '0002']
+# cmd = ['manage.py', 'sqlmigrate', 'questionnaire',  '0007']
 
 # cmd = ['manage.py', 'migrate']
 

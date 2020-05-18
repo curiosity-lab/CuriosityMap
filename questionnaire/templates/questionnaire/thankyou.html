@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thank you</title>
+</head>
+<body>
+
+<a>{{thankyou.text}}</a>
+
+<button type="submit" onclick="location.href='{% url thankyou.whereto thankyou.what%}'"
+        name='questionnaire'><a>Start</a></button>
+
+</body>
+</html>

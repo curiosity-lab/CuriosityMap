@@ -1,13 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>Teacher's Students</title>
 </head>
+
 <body>
 
-Here is the list of all the students whose parents signed consent forms:
+<p>Click on the button to copy the message to the parents.</p>
 
+<textarea name="Text1" cols="40" rows="5" id="toParents">
+    Dear Parents. Please click this link: http://the_site/parent/{{children.source_id}}/index.html
+</textarea>
+
+<button onclick="copyFunction()">Copy text</button>
+
+<script>
+function copyFunction() {
+  var copyText = document.getElementById("toParents");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  alert("Copied the text: " + copyText.value);
+}
+</script>
+
+
+<p>Here is the list of chidlren's whose parents signed consent forms.</p>
 
 </body>
 </html>

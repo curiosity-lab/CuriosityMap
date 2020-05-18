@@ -1,6 +1,8 @@
-from django.shortcuts import render
 from django.views import generic
 from .models import QuestionnaireExplanation, QuestionsData, QuestionnairesData, IDLinks, AnswersData
+from django.http import HttpResponseRedirect
+from django.urls import reverse
+
 
 # Create your views here.
 
@@ -30,7 +32,7 @@ class ExplanationView(generic.ListView):
         return y
 
 
-class QuestionnaireView(generic.TemplateView):
+class QuestionnaireView(generic.ListView):
     questions = QuestionsData
     data = QuestionnairesData
     links = IDLinks
@@ -39,32 +41,103 @@ class QuestionnaireView(generic.TemplateView):
 
     context_object_name = 'questionnaire'
 
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-    #     context['modelone'] = ModelOne.objects.get(*query
-    #     logic *)
-    #     context['modeltwo'] = ModelTwo.objects.get(*query
-    #     logic *)
-    #     return context
-    #
-    # def get_queryset(self):
-        source_in = self.request.resolver_match.kwargs['source']
-        target_in = self.request.resolver_match.kwargs['target']
+    def get_queryset(self):
+        context = {
+            'source': self.request.resolver_match.kwargs['source'],
+            'source_id': self.request.resolver_match.kwargs['source_id'],
+            'target': self.request.resolver_match.kwargs['target'],
+            'target_id': self.request.resolver_match.kwargs['target_id'],
+            'answers': AnswersData.objects.all()
+        }
+        # status: 1 = explanation
+        # status: 2 = answer all questions
+        if self.request.resolver_match.kwargs['status'] == 1:
+            context['status'] = QuestionnaireExplanation.objects.filter(
+                source = self.request.resolver_match.kwargs['source'],
+                target = self.request.resolver_match.kwargs['target']
+            )[0].explanation
+        elif self.request.resolver_match.kwargs['status'] == 2:
+            context['status'] = QuestionnaireExplanation.objects.filter(
+                source='status',
+                target='not_all_questions'
+            )[0].explanation
 
-        if source_in == target_in:
+        if context['source_id'] == context['target_id']:
             q = QuestionsData.objects.filter(target = '1') # self
-        elif source_in == 'parent':
+        elif context['source_in'] == 'parent':
             q = QuestionsData.objects.filter(target = '2') # parent_child
         else:
             q = QuestionsData.objects.filter(target = '3') # teacher_child
 
-        context['questions'] = QuestionsData.objects.filter(question_number = q[0])
-        context['answers'] = AnswersData.objects.select_all()
+        context['questions'] = q
         return context
-        # try:
-        #     return QuestionsData.objects.filter(
-        #         question_number = q[0]
-        #     )
-        # except:
-        #     return QuestionsData.objects.filter()
 
+
+# TODO
+def submitted(request, **kwargs):
+
+    # get questionnaire information
+    source = kwargs['source']
+    source_id = kwargs['source_id']
+    target = kwargs['target']
+    target_id = kwargs['target_id']
+    idl = IDLinks(source_id=source_id, target_id=target_id)
+    questionnaire_id = idl.questionnaire_id
+
+    # get questions/answers information
+    number_of_questions = len(QuestionsData.objects.all())
+    qds = []
+
+    for k in request.POST.keys():
+        key = k.split('_')
+        if len(key) == 2:
+            question_id = QuestionsData.objects.filter(question_number=key[0])[0]
+            answer_id = AnswersData.objects.filter(answer_number=key[1])[0]
+            qds.append(QuestionnairesData(questionnaire_id=questionnaire_id, question_id=question_id, answer_id=answer_id))
+
+    if len(qds) == number_of_questions:
+        # answered all questions
+        # put in DB
+        idl.save()
+        for qd in qds:
+            qd.save()
+        # go to the appropriate page
+        return HttpResponseRedirect(
+            reverse('questionnaire:thankyou', args=[source, source_id, target, target_id]))
+    else:
+        return HttpResponseRedirect(
+            reverse('questionnaire:questionnaire', args=[source, source_id, target, target_id, 2]))
+
+
+class ThankYouView(generic.ListView):
+    template_name = 'questionnaire/thankyou.html'
+
+    context_object_name = 'thankyou'
+
+    def get_queryset(self):
+        source = self.request.resolver_match.kwargs['source']
+        source_id = self.request.resolver_match.kwargs['source_id']
+        target = self.request.resolver_match.kwargs['target']
+        target_id = self.request.resolver_match.kwargs['target_id']
+        context = {
+            'text': QuestionnaireExplanation.objects.filter(
+                source='status',
+                target='thankyou'
+            )[0].explanation
+        }
+
+        if source == 'teacher':
+            # go to "thank you" that leads to children
+            context['whereto'] = 'teacher:children'
+            context['what'] = source_id
+        elif source == 'parent' and target == 'parent':
+            # go to "thank you" that leads to questionnaire on children
+            pass
+        elif source == 'parent' and target == 'child':
+            # go to "thank you" that leads to optional questionnaire of children on children
+            pass
+        elif source == 'child' and target == 'child':
+            # go to "thank you" that leads to Final Page
+            pass
+
+        return context

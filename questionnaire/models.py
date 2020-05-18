@@ -6,17 +6,6 @@ from django.db import models
 from django.db import models
 import uuid
 
-ANSWERS_CHOICES = (
-   ('1', 'בכלל לא מתאר אותי'),
-   ('2', 'מתאר אותי במידה מעטה מאוד'),
-   ('3', 'מתאר אותי במידה מעטה'),
-   ('4', 'מתאר אותי במידה בינונית'),
-   ('5', 'מתאר אותי במידה רבה'),
-   ('6', 'מתאר אותי במידה רבה מאוד'),
-   ('7', 'מתאר אותי באופן מלא (לגמרי אני)')
-)
-
-
 TARGET_CHOICES = {
     ('1', 'self'),
     ('2', 'parent_child'),
@@ -43,6 +32,7 @@ class QuestionsData(models.Model):
 # a list of the 7-Likert scane answers
 class AnswersData(models.Model):
     name_text = models.CharField(max_length=200, default="")
+    answer_number = models.IntegerField(default=0)
 
 
 # Answers data: question, answer, questionnaire id

@@ -64,7 +64,7 @@ class QuestionnaireView(generic.ListView):
 
         if context['source_id'] == context['target_id']:
             q = QuestionsData.objects.filter(target = '1') # self
-        elif context['source_in'] == 'parent':
+        elif context['source_id'] == 'parent':
             q = QuestionsData.objects.filter(target = '2') # parent_child
         else:
             q = QuestionsData.objects.filter(target = '3') # teacher_child
@@ -73,7 +73,6 @@ class QuestionnaireView(generic.ListView):
         return context
 
 
-# TODO
 def submitted(request, **kwargs):
 
     # get questionnaire information
@@ -81,11 +80,19 @@ def submitted(request, **kwargs):
     source_id = kwargs['source_id']
     target = kwargs['target']
     target_id = kwargs['target_id']
+    target_choice = 1
+    if source == target:
+        target_choice = 1
+    elif source == 'parent' and target == 'child':
+        target_choice = 2
+    elif source == 'teacher' and target == 'child':
+        target_choice = 3
+
     idl = IDLinks(source_id=source_id, target_id=target_id)
     questionnaire_id = idl.questionnaire_id
 
     # get questions/answers information
-    number_of_questions = len(QuestionsData.objects.all())
+    number_of_questions = len(QuestionsData.objects.filter(target=target_choice))
     qds = []
 
     for k in request.POST.keys():
@@ -109,6 +116,7 @@ def submitted(request, **kwargs):
             reverse('questionnaire:questionnaire', args=[source, source_id, target, target_id, 2]))
 
 
+# TODO
 class ThankYouView(generic.ListView):
     template_name = 'questionnaire/thankyou.html'
 
@@ -131,12 +139,12 @@ class ThankYouView(generic.ListView):
             context['whereto'] = 'teacher:children'
             context['what'] = source_id
         elif source == 'parent' and target == 'parent':
-            # go to "thank you" that leads to questionnaire on children
-            pass
+            context['whereto'] = 'parent:childquestionnaire'
+            context['what'] = source_id
         elif source == 'parent' and target == 'child':
-            # go to "thank you" that leads to optional questionnaire of children on children
-            pass
-        elif source == 'child' and target == 'child':
+            context['whereto'] = 'parent:thankyou'
+            context['what'] = source_id
+        elif source == 'parent' and target == 'parent':
             # go to "thank you" that leads to Final Page
             pass
 

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teacher Details</title>
+</head>
+<body>
+    {% load static %}
+    <p>Consent form here</p>
+
+    <button type="submit" onclick="location.href='{% url 'parent:child' teacher_id 0%}'" name='agree'>I agree</button>
+
+    {% for status in details %}
+        <label> {{status_text}}</label><br>
+    {% endfor %}
+
+</body>
+</html>

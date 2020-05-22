@@ -20,4 +20,5 @@ urlpatterns = [
     path('questionnaire/', include('questionnaire.urls')),
     path('teacher/', include('teacher.urls')),
     path('admin/', admin.site.urls),
+    path('parent/', include('parent.urls'))
 ]

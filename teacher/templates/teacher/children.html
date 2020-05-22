@@ -10,7 +10,7 @@
 <p>Click on the button to copy the message to the parents.</p>
 
 <textarea name="Text1" cols="40" rows="5" id="toParents">
-    Dear Parents. Please click this link: http://the_site/parent/{{children.source_id}}/index.html
+    http://127.0.0.1:8080/parent/{{children.teacher_id}}
 </textarea>
 
 <button onclick="copyFunction()">Copy text</button>
@@ -26,7 +26,41 @@ function copyFunction() {
 </script>
 
 
-<p>Here is the list of chidlren's whose parents signed consent forms.</p>
+<p>Here is the list of children's whose parents signed consent forms.</p>
+{% if children.children %}
+    <ul>
+    {% for child in children.children %}
+        <li>{% if child.teacher_q %}
+                <a>{{ child.name_text }}</a>
+            {% else %}
+                <a href="{% url 'teacher:childquestionnaire' child.teacher_id child.child_id %}">{{ child.name_text }}</a>
+            {% endif %}
+            <a>Parent questionnaire: </a>
+            {% if child.parent_q %}
+                Yes
+            {% else %}
+                No
+            {% endif %}
 
+            <a>Child questionnaire: </a>
+            {% if child.child_q %}
+                Yes
+            {% else %}
+                No
+            {% endif %}
+
+            <a>Teacher questionnaire: </a>
+            {% if child.teacher_q %}
+                Yes
+            {% else %}
+                No
+            {% endif %}
+
+        </li>
+    {% endfor %}
+    </ul>
+    {% else %}
+        <p>No children are available.</p>
+{% endif %}
 </body>
 </html>

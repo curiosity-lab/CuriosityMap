@@ -17,12 +17,18 @@ generate_db = {
 }
 
 if generate_db['explanation']:
-    # qe1 = QuestionnaireExplanation(source='teacher', target='teacher', explanation='Please fill the form on yourself.')
-    # qe1.save()
+    # qe10 = QuestionnaireExplanation(source='teacher', target='teacher', explanation='Please fill the form on yourself.')
+    # qe10.save()
+    # qe11 = QuestionnaireExplanation(source='parent', target='parent', explanation='Please fill the form on yourself.')
+    # qe11.save()
+    # qe12 = QuestionnaireExplanation(source='parent', target='child', explanation='Please fill the form on your child.')
+    # qe12.save()
+    qe13 = QuestionnaireExplanation(source='teacher', target='child', explanation='Please fill the form on your student.')
+    qe13.save()
     # qe2 = QuestionnaireExplanation(source='status', target='not_all_questions', explanation='Please answer all questions.')
     # qe2.save()
-    qe3 = QuestionnaireExplanation(source='status', target='thankyou', explanation='Thank you for filling the questionnaire.')
-    qe3.save()
+    # qe3 = QuestionnaireExplanation(source='status', target='thankyou', explanation='Thank you for filling the questionnaire.')
+    # qe3.save()
 
 
 if generate_db['questions']:
@@ -31,7 +37,9 @@ if generate_db['questions']:
         'Q2'
     ]
     for i, q in enumerate(the_questions):
-        QuestionsData(question_number=i + 1, name_text=q).save()
+        QuestionsData(question_number=i + 1, name_text=q, target=1).save()
+        QuestionsData(question_number=i + 1, name_text=q, target=2).save()
+        QuestionsData(question_number=i + 1, name_text=q, target=3).save()
 
 if generate_db['answers']:
     ANSWERS_CHOICES = [

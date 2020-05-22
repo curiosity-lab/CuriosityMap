@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Parent Site</title>
+</head>
+<body>
+{% load static %}
+    <a>This is the landing page.</a>
+    <a>With some explanation on whats going on</a>
+    <br>
+
+     <button type="submit" onclick="location.href='{% url 'parent:consent' teacher_id 0%}'" name='continue'>Continue</button>
+</body>
+</html>

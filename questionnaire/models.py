@@ -43,7 +43,7 @@ class QuestionnairesData(models.Model):
 
 
 # linking between questionnaire, who filled it (source) on whom (target)
-# source/target can be teacher/child/parent
+# source/target can be teacher/parent/parent
 class IDLinks(models.Model):
     questionnaire_id = models.UUIDField(primary_key=False, default=uuid.uuid4, editable=True)
     source_id = models.UUIDField(primary_key=False, default=uuid.uuid4, editable=True)

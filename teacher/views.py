@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.views import generic
 from .models import TeacherData, StatusData
+from parent.models import ChildData
 from django.http import HttpResponseRedirect
 from django.urls import reverse
 from django.contrib.auth import authenticate, login
@@ -10,8 +11,9 @@ from .forms import TeacherDataForm
 
 # Create your views here.
 
+
 # landing page
-class IndexView(generic.TemplateView):
+class TeacherIndexView(generic.TemplateView):
     template_name = 'teacher/index.html'
     context_object_name = 'teacher_index'
 
@@ -63,7 +65,7 @@ def update(request):
     form = TeacherDataForm()
 
     return render(request, 'teacher\detail.html', {'form': form, 'teacher_id': teacher.teacher_id})
-    # return HttpResponseRedirect(reverse(render(request, 'teacher\detail.html', {'form': form}), args=["teacher.teacher_id]))
+    # return HttpResponseRedirect(reverse(render(request, 'teacher\consent.html', {'form': form}), args=["teacher.teacher_id]))
     #
     # return HttpResponseRedirect(reverse('questionnaire:explanation', args=["teacher", teacher.teacher_id,
     #                                                                        "teacher", teacher.teacher_id]))
@@ -116,17 +118,27 @@ class ChildrenView(generic.ListView):
     def get_queryset(self):
         """
         Get all children associated with teacher id:
-        teacher.teacher_id = child.teacher_id AND
-        child.child_id = parent.child_id AND
+        teacher.teacher_id = parent.teacher_id AND
+        parent.child_id = parent.child_id AND
         parent.consent = True
         """
+        teacher_id = self.request.resolver_match.kwargs['teacher_id']
+        the_children = ChildData.objects.filter(teacher_id=teacher_id)
+
         context = {
-            'source_id': self.request.resolver_match.kwargs['source_id']
+            'teacher_id': teacher_id,
+            'children': the_children
         }
         return context
 
-    # "Dear Parents. Please click this link: http://the_site/parent/index.html"
-# </label>
 
-# <input type="text" value="Dear Parents. Please click this link: http://the_site/parent/ children.source_id /index.html"
-#        id="toParents">
+def childquestionnaire(request, **kwargs):
+    teacher_id = kwargs['teacher_id']
+    child_id = kwargs['child_id']
+
+    child = ChildData.objects.get(child_id=child_id)
+    setattr(child, 'teacher_q', True)
+    child.save()
+
+    return HttpResponseRedirect(reverse('questionnaire:explanation', args=["teacher", teacher_id,
+                                                                           "child", child_id]))

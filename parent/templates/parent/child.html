@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Child Details</title>
+</head>
+<body>
+    {% load static %}
+
+    <a>Child details</a>
+
+    {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+    <form action="{% url 'parent:childadddata' child_id%}" method="post">
+        {% csrf_token %}
+        {{form.as_ul}}
+    <input type="submit" value="Submit">
+    </form>
+    {% for status in details %}
+        <label> {{status_text}}</label><br>
+    {% endfor %}
+
+</body>
+</html>

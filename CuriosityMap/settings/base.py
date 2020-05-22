@@ -32,7 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'questionnaire.apps.QuetionnaireConfig',
-    'child.apps.ChildConfig',
+    'parent.apps.ChildConfig',
     'teacher.apps.TeacherConfig',
     'django.contrib.admin',
     'django.contrib.auth',

@@ -2,27 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63e618de-c899-4aa0-853f-df5632a265d6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/child/static/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/child/static/teacher/images/bkg_06.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/child/static/teacher/images/profile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/child/static/teacher/simpleGridTemplate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/child/static/teacher/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/child/templates/child/detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/child/templates/child/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/questionnaire/templates/questionnaire/thankyou.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teacher/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teacher/templates/teacher/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parent/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parent/static/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parent/templates/parent/child.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parent/templates/parent/parent.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parent/templates/parent/thankyou.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parent/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CuriosityMap/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/backup/base_db/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CuriosityMap/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/CuriosityMap/settings/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CuriosityMap/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/CuriosityMap/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/child/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/analyze_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/child/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/parent/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/child/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/parent/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/child/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/child/migrations/0002_auto_20200420_2346.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/child/migrations/0003_auto_20200421_0008.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/child/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/parent/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/child/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/parent/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/child/static/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/parent/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/child/static/teacher/images/bkg_06.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/parent/static/teacher/images/bkg_06.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/child/static/teacher/images/profile.png" beforeDir="false" afterPath="$PROJECT_DIR$/parent/static/teacher/images/profile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/child/static/teacher/simpleGridTemplate.css" beforeDir="false" afterPath="$PROJECT_DIR$/parent/static/teacher/simpleGridTemplate.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/child/static/teacher/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/parent/static/teacher/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/child/templates/child/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/parent/templates/parent/consent.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/child/templates/child/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/parent/templates/parent/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/child/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/parent/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/child/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/parent/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/backup/db/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/questionnaire/generate_database.py" beforeDir="false" afterPath="$PROJECT_DIR$/questionnaire/generate_database.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/questionnaire/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/questionnaire/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/questionnaire/templates/questionnaire/explanation.html" beforeDir="false" afterPath="$PROJECT_DIR$/questionnaire/templates/questionnaire/explanation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/questionnaire/templates/questionnaire/questionnaire.html" beforeDir="false" afterPath="$PROJECT_DIR$/questionnaire/templates/questionnaire/questionnaire.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/questionnaire/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/questionnaire/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/questionnaire/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/questionnaire/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teacher/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/teacher/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teacher/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/backup/teacher/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teacher/migrations/0002_auto_20200425_1542.py" beforeDir="false" afterPath="$PROJECT_DIR$/backup/teacher/0002_auto_20200425_1542.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teacher/migrations/0003_auto_20200428_1446.py" beforeDir="false" afterPath="$PROJECT_DIR$/backup/teacher/0003_auto_20200428_1446.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teacher/migrations/0004_statusdata.py" beforeDir="false" afterPath="$PROJECT_DIR$/backup/teacher/0004_statusdata.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teacher/migrations/0005_statusdata_status_number.py" beforeDir="false" afterPath="$PROJECT_DIR$/backup/teacher/0005_statusdata_status_number.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/teacher/templates/teacher/children.html" beforeDir="false" afterPath="$PROJECT_DIR$/teacher/templates/teacher/children.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teacher/templates/teacher/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/teacher/templates/teacher/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/teacher/templates/teacher/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/teacher/templates/teacher/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/teacher/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/teacher/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/teacher/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/teacher/views.py" afterDir="false" />
     </list>
@@ -34,23 +51,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/questionnaire/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="41" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="41" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/teacher/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="60" column="5" lean-forward="true" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
+            <state relative-caret-position="456">
+              <caret line="132" lean-forward="true" selection-start-line="132" selection-end-line="132" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -59,19 +64,59 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/teacher/models.py">
+        <entry file="file://$PROJECT_DIR$/parent/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="39" column="67" selection-start-line="39" selection-start-column="67" selection-end-line="39" selection-end-column="67" />
+            <state relative-caret-position="408">
+              <caret line="24" column="48" lean-forward="true" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/teacher/templates/teacher/index.html">
+        <entry file="file://$PROJECT_DIR$/manage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="75" selection-start-line="23" selection-start-column="75" selection-end-line="23" selection-end-column="75" />
+            <state relative-caret-position="374">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+              <folding>
+                <element signature="e#22#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/parent/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="609">
+              <caret line="125" column="29" selection-start-line="125" selection-start-column="29" selection-end-line="125" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/teacher/templates/teacher/children.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="558">
+              <caret line="53" column="19" lean-forward="true" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/questionnaire/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1506">
+              <caret line="144" column="49" selection-start-line="144" selection-start-column="49" selection-end-line="144" selection-end-column="49" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+                <marker date="1590109908106" expanded="true" signature="2830:2938" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -79,38 +124,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/teacher/templates/teacher/detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+            <state relative-caret-position="272">
+              <caret line="16" selection-start-line="11" selection-end-line="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/teacher/forms.py">
+        <entry file="file://$PROJECT_DIR$/questionnaire/generate_quesionnaire.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-              <folding>
-                <element signature="e#0#34#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/teacher/templates/teacher/register.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/questionnaire/templates/questionnaire/explanation.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="50" lean-forward="true" selection-start-line="9" selection-end-line="10" selection-end-column="50" />
+            <state>
+              <caret column="14" lean-forward="true" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -118,11 +142,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/teacher/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+            <state relative-caret-position="238">
+              <caret line="14" column="90" selection-start-line="14" selection-start-column="72" selection-end-line="14" selection-end-column="90" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/analyze_data.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="36" lean-forward="true" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -150,7 +183,11 @@
       <find>update</find>
       <find>:detail</find>
       <find>:det</find>
+      <find>TODO</find>
       <find>:de</find>
+      <find>form</find>
+      <find>parent/de</find>
+      <find>status</find>
     </findStrings>
     <replaceStrings>
       <replace>{% static 'teacher/images/</replace>
@@ -162,8 +199,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/CuriosityMap/settings.py" />
-        <option value="$PROJECT_DIR$/child/models.py" />
         <option value="$PROJECT_DIR$/questionnaire/migrations/0001_initial.py" />
         <option value="$PROJECT_DIR$/questionnaire/generate_quesionnaire.py" />
         <option value="$PROJECT_DIR$/child/admin.py" />
@@ -173,7 +208,6 @@
         <option value="$PROJECT_DIR$/teacher/static/migrations/0001_initial.py" />
         <option value="$PROJECT_DIR$/teacher/migrations/0001_initial.py" />
         <option value="$PROJECT_DIR$/teacher/templates/teacher/login.html" />
-        <option value="$PROJECT_DIR$/CuriosityMap/urls.py" />
         <option value="$PROJECT_DIR$/questionnaire/admin.py" />
         <option value="$PROJECT_DIR$/teacher/templates/teacher/test.html" />
         <option value="$PROJECT_DIR$/CuriosityMap/wsgi.py" />
@@ -185,37 +219,43 @@
         <option value="$PROJECT_DIR$/questionnaire/migrations/0004_questionnaireexplanation.py" />
         <option value="$PROJECT_DIR$/questionnaire/migrations/0005_auto_20200428_1745.py" />
         <option value="$PROJECT_DIR$/questionnaire/models.py" />
-        <option value="$PROJECT_DIR$/manage.py" />
         <option value="$PROJECT_DIR$/questionnaire/templates/questionnaire/explanation.html" />
         <option value="$PROJECT_DIR$/questionnaire/templates/questionnaire/questionnaire.html" />
         <option value="$PROJECT_DIR$/questionnaire/urls.py" />
-        <option value="$PROJECT_DIR$/questionnaire/generate_database.py" />
-        <option value="$PROJECT_DIR$/questionnaire/views.py" />
         <option value="$PROJECT_DIR$/questionnaire/templates/questionnaire/thankyou.html" />
-        <option value="$PROJECT_DIR$/teacher/templates/teacher/children.html" />
         <option value="$PROJECT_DIR$/child/templates/child/index.html" />
         <option value="$PROJECT_DIR$/teacher/templates/teacher/index.html" />
         <option value="$PROJECT_DIR$/teacher/forms.py" />
         <option value="$PROJECT_DIR$/teacher/templates/teacher/detail.html" />
         <option value="$PROJECT_DIR$/teacher/templates/teacher/register.html" />
         <option value="$PROJECT_DIR$/teacher/models.py" />
+        <option value="$PROJECT_DIR$/child/urls.py" />
+        <option value="$PROJECT_DIR$/parent/templates/parent/detail.html" />
+        <option value="$PROJECT_DIR$/CuriosityMap/urls.py" />
+        <option value="$PROJECT_DIR$/parent/templates/parent/child_detail.html" />
+        <option value="$PROJECT_DIR$/parent/templates/parent/index.html" />
+        <option value="$PROJECT_DIR$/parent/templates/parent/child_details.html" />
+        <option value="$PROJECT_DIR$/parent/templates/parent/consent.html" />
+        <option value="$PROJECT_DIR$/parent/forms.py" />
+        <option value="$PROJECT_DIR$/parent/templates/parent/child.html" />
+        <option value="$PROJECT_DIR$/parent/templates/parent/parent.html" />
+        <option value="$PROJECT_DIR$/questionnaire/views.py" />
+        <option value="$PROJECT_DIR$/parent/urls.py" />
+        <option value="$PROJECT_DIR$/parent/templates/parent/thankyou.html" />
+        <option value="$PROJECT_DIR$/analyze_data.py" />
         <option value="$PROJECT_DIR$/teacher/urls.py" />
+        <option value="$PROJECT_DIR$/questionnaire/generate_database.py" />
+        <option value="$PROJECT_DIR$/parent/models.py" />
+        <option value="$PROJECT_DIR$/manage.py" />
+        <option value="$PROJECT_DIR$/parent/views.py" />
+        <option value="$PROJECT_DIR$/teacher/templates/teacher/children.html" />
         <option value="$PROJECT_DIR$/teacher/views.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-      </list>
-    </option>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1296" />
-    <option name="height" value="1416" />
+    <option name="width" value="830" />
+    <option name="height" value="882" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -234,37 +274,16 @@
             <path>
               <item name="CuriosityMap" type="b2602c69:ProjectViewProjectNode" />
               <item name="CuriosityMap" type="462c0819:PsiDirectoryNode" />
-              <item name="child" type="462c0819:PsiDirectoryNode" />
+              <item name="CuriosityMap" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CuriosityMap" type="b2602c69:ProjectViewProjectNode" />
               <item name="CuriosityMap" type="462c0819:PsiDirectoryNode" />
-              <item name="child" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="parent" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CuriosityMap" type="b2602c69:ProjectViewProjectNode" />
               <item name="CuriosityMap" type="462c0819:PsiDirectoryNode" />
-              <item name="child" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="child" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CuriosityMap" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CuriosityMap" type="462c0819:PsiDirectoryNode" />
-              <item name="questionnaire" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CuriosityMap" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CuriosityMap" type="462c0819:PsiDirectoryNode" />
-              <item name="questionnaire" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CuriosityMap" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CuriosityMap" type="462c0819:PsiDirectoryNode" />
-              <item name="questionnaire" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="questionnaire" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -294,23 +313,23 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/child/templates/child" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/parent/templates/parent" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Goren\CuriosityLab\Code\django\CuriosityMap\CuriosityMap" />
-      <recent name="C:\Goren\CuriosityLab\Code\django\CuriosityMap" />
-      <recent name="C:\Goren\CuriosityLab\Code\django\CuriosityMap\teacher\static\teacher" />
-      <recent name="C:\Goren\CuriosityLab\Code\django\CuriosityMap\teacher\migrations" />
-      <recent name="C:\Goren\CuriosityLab\Code\django\CuriosityMap\teacher\static" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Goren\CuriosityLab\Code\django\CuriosityMap\parent\templates\parent" />
       <recent name="C:\Goren\CuriosityLab\Code\django\CuriosityMap\child\templates\child" />
       <recent name="C:\Goren\CuriosityLab\Code\django\CuriosityMap\child" />
       <recent name="C:\Goren\CuriosityLab\Code\django\CuriosityMap\teacher\static\teacher" />
       <recent name="C:\Goren\CuriosityLab\Code\django\CuriosityMap\teacher\templates\teacher\images" />
-      <recent name="C:\Goren\CuriosityLab\Code\django\CuriosityMap\teacher\templates\teacher" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Goren\CuriosityLab\Code\django\CuriosityMap\backup\base_db" />
+      <recent name="C:\Goren\CuriosityLab\Code\django\CuriosityMap\backup\db" />
+      <recent name="C:\Goren\CuriosityLab\Code\django\CuriosityMap\backup\parent" />
+      <recent name="C:\Goren\CuriosityLab\Code\django\CuriosityMap\backup\teacher" />
+      <recent name="C:\Goren\CuriosityLab\Code\django\CuriosityMap\backup" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -326,6 +345,27 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.manage">
+    <configuration name="analyze_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="CuriosityMap" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/analyze_data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="generate_database" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CuriosityMap" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -393,6 +433,7 @@
       <list>
         <item itemvalue="Python.manage" />
         <item itemvalue="Python.generate_database" />
+        <item itemvalue="Python.analyze_data" />
         <item itemvalue="Python.generate_quesionnaire" />
       </list>
     </recent_temporary>
@@ -457,20 +498,27 @@
       <option name="project" value="LOCAL" />
       <updated>1589726304753</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="finished the teacher part">
+      <created>1589813260016</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1589813260016</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16666667" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16627266" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32969603" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.4731099" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.5198753" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3289166" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.4193297" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.51831645" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -482,6 +530,25 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16644649" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32956153" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.49080622" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.51909477" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32969603" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
@@ -492,20 +559,36 @@
     <MESSAGE value="added allowed hosts" />
     <MESSAGE value="enabled local and remote" />
     <MESSAGE value="(almost) finalized the teacher part" />
-    <option name="LAST_COMMIT_MESSAGE" value="(almost) finalized the teacher part" />
+    <MESSAGE value="finished the teacher part" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished the teacher part" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/teacher/views.py</url>
-          <line>33</line>
+          <line>35</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/teacher/views.py</url>
-          <line>82</line>
+          <line>84</line>
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/parent/views.py</url>
+          <line>43</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/questionnaire/views.py</url>
+          <line>101</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/questionnaire/views.py</url>
+          <line>104</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -575,71 +658,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/teacher/apps.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/teacher/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/child/migrations/0003_auto_20200421_0008.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/child/migrations/0001_initial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#50#90#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/child/migrations/0002_auto_20200420_2346.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="6" selection-start-line="3" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/teacher/migrations/0001_initial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#96#136#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/questionnaire/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="24" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CuriosityMap/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
-          <folding>
-            <element signature="e#646#678#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/questionnaire/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/django/db/models/query.py" />
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/django/views/generic/base.py" />
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/django/core/handlers/base.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/django/core/handlers/exception.py" />
     <entry file="file://$PROJECT_DIR$/teacher/templates/teacher/test.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -732,19 +750,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/child/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/questionnaire/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python35/site-packages/django/views/generic/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
@@ -759,117 +764,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/questionnaire/templates/questionnaire/questionnaire.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/questionnaire/generate_database.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/questionnaire/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
-          <folding>
-            <element signature="e#46#74#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="80" lean-forward="true" selection-start-line="5" selection-start-column="80" selection-end-line="5" selection-end-column="80" />
-          <folding>
-            <element signature="e#22#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/questionnaire/generate_quesionnaire.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/questionnaire/templates/questionnaire/thankyou.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/teacher/templates/teacher/children.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/child/templates/child/detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/questionnaire/templates/questionnaire/explanation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="50" lean-forward="true" selection-start-line="9" selection-end-line="10" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/teacher/templates/teacher/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="75" selection-start-line="23" selection-start-column="75" selection-end-line="23" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/child/templates/child/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="34" lean-forward="true" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/teacher/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/questionnaire/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="41" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/questionnaire/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="914">
-          <caret line="118" column="67" lean-forward="true" selection-start-line="118" selection-start-column="20" selection-end-line="118" selection-end-column="67" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-            <marker date="1589806839036" expanded="true" signature="2837:2945" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -880,10 +778,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/teacher/models.py">
+    <entry file="file://$PROJECT_DIR$/teacher/templates/teacher/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="39" column="67" selection-start-line="39" selection-start-column="67" selection-end-line="39" selection-end-column="67" />
+        <state relative-caret-position="391">
+          <caret line="23" column="75" selection-start-line="23" selection-start-column="75" selection-end-line="23" selection-end-column="75" />
         </state>
       </provider>
     </entry>
@@ -894,27 +792,236 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/teacher/urls.py">
+    <entry file="file://$PROJECT_DIR$/questionnaire/templates/questionnaire/explanation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+        <state relative-caret-position="170">
+          <caret line="10" column="50" selection-start-line="9" selection-end-line="10" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/questionnaire/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="139" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="139" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/teacher/templates/teacher/detail.html">
+    <entry file="file://$PROJECT_DIR$/teacher/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="30" lean-forward="true" selection-end-line="7" selection-end-column="109" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/teacher/migrations/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CuriosityMap/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+          <folding>
+            <element signature="e#646#678#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parent/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parent/templates/parent/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="125" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="125" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/teacher/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="3" column="11" lean-forward="true" selection-start-line="3" selection-end-line="4" />
+          <folding>
+            <element signature="e#46#74#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parent/migrations/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parent/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="15" lean-forward="true" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parent/templates/parent/consent.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parent/templates/parent/child.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+          <caret line="13" column="55" lean-forward="true" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parent/templates/parent/parent.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/questionnaire/templates/questionnaire/questionnaire.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="7" lean-forward="true" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/questionnaire/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="27" column="73" selection-start-line="27" selection-start-column="73" selection-end-line="27" selection-end-column="73" />
+          <folding>
+            <element signature="e#46#74#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parent/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="83" selection-start-line="13" selection-start-column="83" selection-end-line="13" selection-end-column="83" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parent/templates/parent/thankyou.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/questionnaire/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/teacher/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/questionnaire/generate_quesionnaire.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" lean-forward="true" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/analyze_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="36" lean-forward="true" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/teacher/templates/teacher/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="11" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/teacher/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="90" selection-start-line="14" selection-start-column="72" selection-end-line="14" selection-end-column="90" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/questionnaire/generate_database.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="35" column="13" lean-forward="true" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parent/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="48" lean-forward="true" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#22#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/questionnaire/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1506">
+          <caret line="144" column="49" selection-start-line="144" selection-start-column="49" selection-end-line="144" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+            <marker date="1590109908106" expanded="true" signature="2830:2938" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parent/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="125" column="29" selection-start-line="125" selection-start-column="29" selection-end-line="125" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/teacher/templates/teacher/children.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="53" column="19" lean-forward="true" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/teacher/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="60" column="5" lean-forward="true" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
+        <state relative-caret-position="456">
+          <caret line="132" lean-forward="true" selection-start-line="132" selection-end-line="132" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>

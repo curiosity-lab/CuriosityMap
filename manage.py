@@ -4,14 +4,17 @@ import sys
 
 # cmd = ['manage.py', 'shell']
 # cmd = ['manage.py', 'createsuperuser'] # admin/goren@gorengordon.com/goren22GG
+# cd C:\Users\LENOVO-P50\AppData\Local\Programs\Python\Python35
+# python C:\Goren\CuriosityLab\Code\django\CuriosityMap\manage.py createsuperuser
+
 cmd = ['manage.py', 'runserver', '8080']
 
-# cmd = ['manage.py', 'startapp', 'child']
-# cmd = ['manage.py', 'makemigrations', 'teacher']
-# cmd = ['manage.py', 'sqlmigrate', 'teacher',  '0004']
+# cmd = ['manage.py', 'startapp', 'parent']
+# cmd = ['manage.py', 'makemigrations', 'parent']
+# cmd = ['manage.py', 'sqlmigrate', 'parent',  '0001']
 
-# cmd = ['manage.py', 'makemigrations', 'child']
-# cmd = ['manage.py', 'sqlmigrate', 'child',  '0003']
+# cmd = ['manage.py', 'makemigrations', 'teacher']
+# cmd = ['manage.py', 'sqlmigrate', 'teacher',  '0005']
 
 # cmd = ['manage.py', 'makemigrations', 'questionnaire']
 # cmd = ['manage.py', 'sqlmigrate', 'questionnaire',  '0007']

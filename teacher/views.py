@@ -110,7 +110,6 @@ class TeacherView(generic.ListView):
         return "teacher data"
 
 
-# TODO
 class ChildrenView(generic.ListView):
     template_name = 'teacher/children.html'
     context_object_name = 'children'

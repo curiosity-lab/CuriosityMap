@@ -23,6 +23,7 @@ class ChildData(models.Model):
 
     parent_q = models.BooleanField(default=False)
     child_q = models.BooleanField(default=False)
+    self_q = models.BooleanField(default=False)
     teacher_q = models.BooleanField(default=False)
 
     def __str__(self):

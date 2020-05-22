@@ -114,7 +114,27 @@ def childquestionnaire(request, **kwargs):
     return HttpResponseRedirect(reverse('questionnaire:explanation', args=["parent", parent_id,
                                                                            "child", parent.child_id]))
 
-class ThankyouView(generic.TemplateView):
+
+class ChildselfquestionnaireView(generic.TemplateView):
+    template_name = 'parent/childselfquestionnaire.html'
+
+    def get_context_data(self, *args, **kwargs):
+        parent_id = self.request.resolver_match.kwargs['parent_id']
+        context = { 'parent_id': parent_id}
+        return context
+
+
+def gotochildself(request, **kwargs):
+    parent = ParentData.objects.filter(
+        parent_id=kwargs['parent_id']
+    )[0]
+    child_id = parent.child_id
+
+    return HttpResponseRedirect(reverse('questionnaire:explanation', args=["child", child_id,
+                                                                           "child", child_id]))
+
+
+class ThankyouView1(generic.TemplateView):
     template_name = 'parent/thankyou.html'
 
     def get_context_data(self, *args, **kwargs):
@@ -128,5 +148,40 @@ class ThankyouView(generic.TemplateView):
 
         context = {
             'parent_id': parent_id
+        }
+        return context
+
+
+class ThankyouView1(generic.TemplateView):
+    template_name = 'parent/thankyou.html'
+
+    def get_context_data(self, *args, **kwargs):
+        parent_id = self.request.resolver_match.kwargs['parent_id']
+        parent = ParentData.objects.get(parent_id=parent_id)
+        child_id = parent.child_id
+
+        child = ChildData.objects.get(child_id=child_id)
+        setattr(child, 'child_q', True)
+        child.save()
+
+        context = {
+            'parent_id': parent_id
+        }
+        return context
+
+
+
+class ThankyouView2(generic.TemplateView):
+    template_name = 'parent/thankyou.html'
+
+    def get_context_data(self, *args, **kwargs):
+        child_id = self.request.resolver_match.kwargs['child_id']
+
+        child = ChildData.objects.get(child_id=child_id)
+        setattr(child, 'self_q', True)
+        child.save()
+
+        context = {
+            'parent_id': child_id
         }
         return context

@@ -135,17 +135,16 @@ class ThankYouView(generic.ListView):
         }
 
         if source == 'teacher':
-            # go to "thank you" that leads to children
             context['whereto'] = 'teacher:children'
             context['what'] = source_id
         elif source == 'parent' and target == 'parent':
             context['whereto'] = 'parent:childquestionnaire'
             context['what'] = source_id
         elif source == 'parent' and target == 'child':
-            context['whereto'] = 'parent:thankyou'
+            context['whereto'] = 'parent:childselfquestionnaire'
             context['what'] = source_id
-        elif source == 'parent' and target == 'parent':
-            # go to "thank you" that leads to Final Page
-            pass
+        elif source == 'child' and target == 'child':
+            context['whereto'] = 'parent:thankyou2'
+            context['what'] = source_id
 
         return context

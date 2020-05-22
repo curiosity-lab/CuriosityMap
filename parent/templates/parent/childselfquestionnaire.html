@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Child Self Questionnaire</title>
+</head>
+<body>
+    {% load static %}
+    <p>Child Self Questionnaire</p>
+
+    <p>This is optional</p>
+    <button type="submit" onclick="location.href='{% url 'parent:gotochildself' parent_id%}'" name='do'>Do questionnaire</button>
+    <button type="submit" onclick="location.href='{% url 'parent:thankyou1' parent_id%}'" name='dont'>Dont want to</button>
+
+</body>
+</html>

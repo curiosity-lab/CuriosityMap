@@ -56,6 +56,13 @@ function copyFunction() {
                 No
             {% endif %}
 
+            <a>Child self questionnaire: </a>
+            {% if child.self_q %}
+                Yes
+            {% else %}
+                No
+            {% endif %}
+
         </li>
     {% endfor %}
     </ul>
